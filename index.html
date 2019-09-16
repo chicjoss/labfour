@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> Fundamentals of Web Development Lab 4 </title>
+      <meta charset="UTF-8" />
+   </head>
+   <body>
+      <h1> Volunteer Form </h1>
+      <form action= "http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+         <div>
+            <fieldset>
+               <h2> My Info </h2>
+               <div>
+                  <label> First Name:<input type="text" name="first_name_field"></label>
+               </div>
+               <div>
+                  <label> Last Name: <input type="text" name="last_name_field"></label>
+               </div>
+               <div>
+                  <label>Phone Number: <input type="text" name="phone_field"></label>
+               </div>
+               <div>
+                  <label>Email Address: <input type="text" name="email_field"></label>
+               </div>
+               <div>
+                  <label>Gender:</label>
+                  <input type= "radio" name= "gender_field" value="Female">Female
+                  <input type= "radio" name= "gender_field" value="Male">Male
+               </div>
+               <div>
+                  <label>
+                     Age:
+                     <select name= "age_field">
+                        <option value="0-18">Under 18 </option>
+                        <option value="18-24">18-24 </option>
+                        <option value="25-34">25-34 </option>
+                        <option value="35-44">35-44 </option>
+                        <option value="45-54">45-54 </option>
+                        <option value="55-64">55-64 </option>
+                        <option value="65 above"> 65 and over </option>
+                     </select>
+                  </label>
+               </div>
+            </fieldset>
+            <h2> My Availability </h2>
+            <fieldset>
+               <label>Days Available: </label>
+    
+        <div>        
+          <input type="checkbox" name="available_field[]" value="monday" id="mon">
+          <label for="mon">Monday</label>
+        </div>
+        <div>        
+          <input type="checkbox" name="available_field[]" value="tuesday" id="tues">
+          <label for="tues">Tuesday</label>
+        </div>
+        <div>
+          <input type="checkbox" name="available_field[]" value="wednesday" id="wed">
+          <label for="wed">Wednesday</label>
+        </div>
+        <div>        
+          <input type="checkbox" name="available_field[]" value="thursday" id="thur">
+          <label for="thur">Thursday</label>
+        </div>
+        <div>        
+          <input type="checkbox" name="available_field[]" value="friday" id="fri">
+          <label for="fri">Friday</label>
+        </div>
+        <div>        
+          <input type="checkbox" name="available_field[]" value="saturday" id="sat">
+          <label for="sat">Saturday</label>
+		    </div>
+		    
+		  <input type="checkbox" name="available_field[]" value="sunday" id="sun">
+          <label for="sun">Sunday</label>            
+        </div>
+        <p></p>
+        <label>Any comments?  </label>
+        <div>
+          <textarea rows="6" cols="45" name="comments_field" placeholder="type comments here"></textarea>
+        </div>        
+      </fieldset>
+      <div>
+        <input type="hidden" name="hidden_field" value="jherrera">
+      </div>
+      <p>
+        <input type="submit" value="Send Me">
+      </p>
+      </div>
+    </form>
+    </fieldset>
+  </body>
